@@ -1,0 +1,145 @@
+{
+  "title": "PG-LATAR corrected simulation-only statistical benchmark",
+  "seed_partitions": {
+    "training": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "legacy_calibration": [
+      51,
+      52,
+      53,
+      54
+    ],
+    "new_healthy_calibration": [
+      10001,
+      10150
+    ],
+    "shifted_healthy_calibration": [
+      20001,
+      20150
+    ],
+    "nominal_test_starts": [
+      301,
+      321,
+      341,
+      361
+    ],
+    "healthy_evaluation": [
+      601,
+      700
+    ],
+    "shifted_test_starts": [
+      801,
+      821,
+      841,
+      861
+    ],
+    "structural_test_starts": [
+      300001,
+      300021,
+      300041,
+      300061
+    ]
+  },
+  "hyperparameters_frozen_before_run": {
+    "gamma": 0.45,
+    "rho": 0.95,
+    "k": 1.1,
+    "sigma_floor": 0.12
+  },
+  "hyperparameter_provenance": "pre-existing draft defaults; original historical selection unverified",
+  "method_count": 14,
+  "methods": [
+    "Fixed temperature",
+    "Ambient-corrected",
+    "Load regression",
+    "Load regression + accumulator",
+    "Phase delta-T",
+    "Phase delta-T + accumulator",
+    "RC residual",
+    "PG-LATAR (no peer)",
+    "PG-LATAR",
+    "PG-LATAR two-sided",
+    "RC multi-step rollout",
+    "PG-LATAR observer",
+    "Kalman innovation",
+    "Isolation forest residual"
+  ],
+  "generator": {
+    "N_minutes": 5760,
+    "warmup_minutes": 180,
+    "event_minutes": 270,
+    "process_noise_sigma": 0.055,
+    "per_phase_observation_noise_sigma": 0.25,
+    "common_observation_noise_sigma": 0.08,
+    "ambient_sensor_sigma": 0.2,
+    "base_tau_minutes": [
+      34,
+      37,
+      40
+    ],
+    "base_alpha": [
+      0.0017,
+      0.00158,
+      0.00152
+    ],
+    "tau_shift_multiplier_uniform": [
+      0.88,
+      1.12
+    ],
+    "alpha_shift_multiplier_uniform": [
+      0.94,
+      1.06
+    ],
+    "structural_core_tau_multiplier": 1.45,
+    "structural_surface_tau_multiplier": 0.37,
+    "structural_temp_coefficient_per_C": 0.003,
+    "door_steps_minute": [
+      930,
+      2280,
+      3890
+    ],
+    "door_step_duration_min": 100,
+    "door_step_degC_magnitude": 2.5,
+    "ambient_step_minutes": [
+      2600,
+      3000
+    ],
+    "ambient_step_degC": 2.5,
+    "phase_current_factors": [
+      0.93,
+      1.0,
+      1.08
+    ],
+    "load_profile": "102 + 20*sin(2*pi*(hour-6)/24) + 7*lowpass(white noise,0.025) + six-hour demand offsets; clip current to [45,160]",
+    "ambient_profile": "27 + 3.2*sin(2*pi*(hour-5)/24) + 0.7*sin(2*pi*hour/72) + lowpass(white noise,0.025)",
+    "load_noise": "per-phase lowpass(white noise,0.12)*4",
+    "resistance_drift_source": "(0.00070 * severity/7) * current^2 * ramp",
+    "nominal_predictor_state": "recursive predicted state initialized from first measured temperature, without subsequent reinitialization; observer comparator differs"
+  },
+  "evaluation": {
+    "system_episode_refractory_minutes": 40,
+    "window_minutes": 300,
+    "hit_rule": "any active alarm on affected phase within event + 30 min",
+    "fp": "system OR episodes per system-day, 90-minute fault guard",
+    "posthoc_equal_realized_fp": "descriptive interpolated held-out curves, not threshold selection"
+  },
+  "bootstrap": 2000,
+  "calibration_resamples": 200,
+  "args": {
+    "output": "/mnt/data/PG_LATAR_Final_2026/results",
+    "n": 100,
+    "healthy_n": 100,
+    "shifted_n": 100,
+    "structural_n": 100,
+    "calibration_n": 150,
+    "severity_n": 100,
+    "noise_n": 100,
+    "bootstrap": 2000,
+    "calibration_resamples": 200,
+    "smoke": false
+  }
+}

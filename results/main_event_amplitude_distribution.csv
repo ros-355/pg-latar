@@ -1,0 +1,5 @@
+cohort,family,magnitude_C_equiv,sequences
+nominal_main,contact-heating,7.0,100
+nominal_main,resistance-drift,7.0,100
+nominal_main,shared ambient/enclosure heating,7.0,100
+nominal_main,sensor-offset,7.0,100

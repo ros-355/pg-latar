@@ -1,0 +1,71 @@
+setting,method,realized_target,interpolated_recall,interpolated_rmtd,note
+nominal,Fixed temperature,0.05,0.21850694444444443,264.18008680555556,descriptive only: post-hoc interpolated held-out curve
+nominal,Fixed temperature,0.1,0.25227941176470586,256.9174264705882,descriptive only: post-hoc interpolated held-out curve
+nominal,Fixed temperature,0.25,0.3082611386138614,245.4628094059406,descriptive only: post-hoc interpolated held-out curve
+nominal,Fixed temperature,0.5,0.3465691489361702,235.37248670212767,descriptive only: post-hoc interpolated held-out curve
+nominal,Fixed temperature,1.0,0.4329474708171206,214.23489299610895,descriptive only: post-hoc interpolated held-out curve
+nominal,Ambient-corrected,0.05,0.229765625,262.316875,descriptive only: post-hoc interpolated held-out curve
+nominal,Ambient-corrected,0.1,0.26933333333333337,252.50158333333334,descriptive only: post-hoc interpolated held-out curve
+nominal,Ambient-corrected,0.25,0.3325,240.9584375,descriptive only: post-hoc interpolated held-out curve
+nominal,Ambient-corrected,0.5,0.3847093023255814,228.4822093023256,descriptive only: post-hoc interpolated held-out curve
+nominal,Ambient-corrected,1.0,0.43827777777777777,214.0571111111111,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression,0.05,0.8492025862068966,149.60665948275863,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression,0.1,0.9479605263157894,113.63684210526316,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression,0.25,0.98046875,68.51562499999997,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression,0.5,0.9975,68.56419057377049,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression,1.0,1.0,57.50849264705882,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression + accumulator,0.05,0.9925,90.051125,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression + accumulator,0.1,0.9975,82.21390625,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression + accumulator,0.25,1.0,70.93900265957447,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression + accumulator,0.5,1.0,63.071763698630136,descriptive only: post-hoc interpolated held-out curve
+nominal,Load regression + accumulator,1.0,1.0,55.97116438356164,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T,0.05,0.5977611301369863,186.94688356164383,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T,0.1,0.6380222602739727,176.38626712328767,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T,0.25,0.6668269230769232,170.0453269230769,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T,0.5,0.6982631578947368,164.2233947368421,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T,1.0,0.72,158.6590506329114,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T + accumulator,0.05,0.6375,183.141328125,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T + accumulator,0.1,0.65,179.15795454545454,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T + accumulator,0.25,0.6775,172.78286458333332,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T + accumulator,0.5,0.7097260273972603,166.27073630136985,descriptive only: post-hoc interpolated held-out curve
+nominal,Phase delta-T + accumulator,1.0,0.7422640449438203,156.77840168539328,descriptive only: post-hoc interpolated held-out curve
+nominal,RC residual,0.05,1.0,52.750092592592594,descriptive only: post-hoc interpolated held-out curve
+nominal,RC residual,0.1,1.0,49.39046875,descriptive only: post-hoc interpolated held-out curve
+nominal,RC residual,0.25,1.0,44.792826086956524,descriptive only: post-hoc interpolated held-out curve
+nominal,RC residual,0.5,1.0,41.39245361328125,descriptive only: post-hoc interpolated held-out curve
+nominal,RC residual,1.0,1.0,38.51967716535433,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR (no peer),0.05,1.0,57.9075,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR (no peer),0.1,1.0,54.10928571428572,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR (no peer),0.25,1.0,40.41715801886792,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR (no peer),0.5,1.0,44.63727272727272,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR (no peer),1.0,1.0,41.498206243602866,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR,0.05,1.0,51.83599431818182,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR,0.1,1.0,49.21392857142857,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR,0.25,1.0,45.2984375,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR,0.5,1.0,42.20194672131147,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR,1.0,1.0,39.418951993141874,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR two-sided,0.05,1.0,55.43133333333333,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR two-sided,0.1,1.0,52.96729166666667,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR two-sided,0.25,1.0,35.068800403225794,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR two-sided,0.5,1.0,46.150424311926606,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR two-sided,1.0,1.0,43.028805868635835,descriptive only: post-hoc interpolated held-out curve
+nominal,RC multi-step rollout,0.05,1.0,32.277057119205296,descriptive only: post-hoc interpolated held-out curve
+nominal,RC multi-step rollout,0.1,1.0,29.890653973509934,descriptive only: post-hoc interpolated held-out curve
+nominal,RC multi-step rollout,0.25,1.0,20.59895833333333,descriptive only: post-hoc interpolated held-out curve
+nominal,RC multi-step rollout,0.5,1.0,26.595387168141592,descriptive only: post-hoc interpolated held-out curve
+nominal,RC multi-step rollout,1.0,1.0,25.413139534883722,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR observer,0.05,1.0,51.861328125,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR observer,0.1,1.0,49.31520833333333,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR observer,0.25,1.0,45.361549295774644,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR observer,0.5,1.0,42.263777985074626,descriptive only: post-hoc interpolated held-out curve
+nominal,PG-LATAR observer,1.0,1.0,39.4768474067724,descriptive only: post-hoc interpolated held-out curve
+nominal,Kalman innovation,0.05,0.9999735915492958,52.59742077464789,descriptive only: post-hoc interpolated held-out curve
+nominal,Kalman innovation,0.1,1.0,48.53527777777778,descriptive only: post-hoc interpolated held-out curve
+nominal,Kalman innovation,0.25,1.0,43.72017045454545,descriptive only: post-hoc interpolated held-out curve
+nominal,Kalman innovation,0.5,1.0,40.370865384615385,descriptive only: post-hoc interpolated held-out curve
+nominal,Kalman innovation,1.0,1.0,37.540625,descriptive only: post-hoc interpolated held-out curve
+nominal,Isolation forest residual,0.05,0.30148706896551725,242.04730603448274,descriptive only: post-hoc interpolated held-out curve
+nominal,Isolation forest residual,0.1,0.39154929577464787,224.47510563380283,descriptive only: post-hoc interpolated held-out curve
+nominal,Isolation forest residual,0.25,0.5070656779661017,193.89537076271185,descriptive only: post-hoc interpolated held-out curve
+nominal,Isolation forest residual,0.5,0.6319,164.8376,descriptive only: post-hoc interpolated held-out curve
+nominal,Isolation forest residual,1.0,0.779204834605598,129.53401399491094,descriptive only: post-hoc interpolated held-out curve

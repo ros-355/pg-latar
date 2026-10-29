@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and the specific repository release or commit used."
+title: "PG-LATAR MCC simulation benchmark"
+type: software
+authors:
+  - family-names: Sharma
+    given-names: Roshan Kumar
+    affiliation: "Department of Electrical Engineering, IOE Purwanchal Campus, Dharan, Nepal"
+    email: pur078bel042@ioepc.edu.np
+  - family-names: Dahal
+    given-names: Ujjwal Prasad
+    affiliation: "Department of Electrical Engineering, IOE Purwanchal Campus, Dharan, Nepal"
+  - family-names: Ray
+    given-names: Naresh Kumar
+    affiliation: "Department of Electrical Engineering, IOE Purwanchal Campus, Dharan, Nepal"
+abstract: "Simulation-only benchmark of load conditioned thermal anomaly detection, independent false-alarm calibration, and thermal model mismatch."
+keywords:
+  - motor control centre
+  - thermal anomaly detection
+  - synthetic data
+  - false-alarm calibration
